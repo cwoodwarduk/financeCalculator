@@ -28,7 +28,8 @@ body {
     .container #form .inputField {
       width: 200px;
       height: 30px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      font-size: 1.2rem; }
     .container #form #submit {
       height: 50px;
       width: 120px;
