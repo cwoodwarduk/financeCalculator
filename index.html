@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>EdAid Finance Calculator</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app/js/typescripted/index.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="app/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
-<body>
 
+<body>
+<section class="container">
+    <h1>EdAid Finance Calculator</h1>
+    <form id="form">
+        <label for="amount">Amount you would like to borrow:</label><br>
+        <input type="number" class="inputField" id="amount" min="1" step="1" max="8000" maxlength="4" required/><br>
+        <label for="expectedSalary">Your expected salary:</label><br>
+        <input type="number" class="inputField" id="expectedSalary" required min="20000"/><br>
+        <label for="repayment">Percentage of salary you will commit to repayment (pcm):</label><br>
+        <input type="number" class="inputField" id="repayment" min="10" step="1" max="100" maxlength="3" required/><br>
+        <input type="submit" id="submit">
+    </form>
+
+    <div class="results">
+
+    </div>
+</section>
 </body>
 </html>
