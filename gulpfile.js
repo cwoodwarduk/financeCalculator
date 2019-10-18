@@ -10,7 +10,7 @@ function typey(){
 }
 
 function sassCompile(cb){
-    return gulp.src('app/scss/style.scss')
+    return gulp.src('app/scss/styles.scss')
         .pipe(sass()) //convert sass to css with gulp sass
         .pipe(gulp.dest('app/css'))
     cb()
